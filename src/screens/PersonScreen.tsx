@@ -76,7 +76,6 @@ const PersonScreen = ({navigation, route}: PersonProps) => {
         <View>
           <View style={styles.profileContainer}>
             <Image
-              // source={require('../assets/keanureeves.jpg')}
               source={{
                 uri:
                   fetchImage342(personDetails?.profile_path as string) ||

@@ -2,7 +2,7 @@
 import {Image, StyleSheet, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 import {TrendingMovieApiInfo} from '../api/type';
-import {fetchImage342, fetchImage500} from '../api/moviedb';
+import {fetchImage342} from '../api/moviedb';
 
 export interface MovieCardProps {
   item: TrendingMovieApiInfo;

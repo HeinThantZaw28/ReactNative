@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import {
   ScrollView,
   StyleSheet,
@@ -31,16 +32,13 @@ const Cast = ({casts}: CastProps) => {
               key={i}
               style={styles.inContainer}
               onPress={() => navigation.navigate('Person', {cast: cast})}>
-              {/* <View style={styles.img}> */}
               <Image
-                // source={require('../assets/keanureeves.jpg')}
                 source={{
                   uri: fetchImage185(cast.profile_path) || fallbackPersonImage,
                 }}
                 resizeMode="cover"
                 style={{width: 60, height: 60, borderRadius: 60}}
               />
-              {/* </View> */}
               <Text style={styles.castName}>
                 {cast.character.length > 10
                   ? cast.character.slice(0, 10) + '...'

@@ -1,4 +1,5 @@
-import {StyleSheet, Text, View, useWindowDimensions} from 'react-native';
+/* eslint-disable react-native/no-inline-styles */
+import {View, useWindowDimensions} from 'react-native';
 import React from 'react';
 import * as Progress from 'react-native-progress';
 
@@ -13,5 +14,3 @@ const Loading = () => {
 };
 
 export default Loading;
-
-const styles = StyleSheet.create({});

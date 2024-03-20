@@ -73,7 +73,6 @@ const SearchScreen = () => {
                   source={{
                     uri: fetchImage185(item.poster_path) || fallbackMoviePoster,
                   }}
-                  // source={require('../assets/endgame.jpeg')}
                   resizeMode="cover"
                   style={styles.img}
                 />
